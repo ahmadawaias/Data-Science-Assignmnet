@@ -67,21 +67,24 @@ svm_accuracy = accuracy_score(y_test, svm_predictions)
 mlp_accuracy = accuracy_score(y_test, mlp_predictions)
 
 # Print accuracies
-# print(f"Logistic Regression Accuracy: {lr_accuracy}")
-# print(f"Support Vector Machines Accuracy: {svm_accuracy}")
-# print(f"Multilayer Perceptron Accuracy: {mlp_accuracy}")
+
 print("\n\t...................ACCURACY,.....................\n ")
+
 print("Logistic Regression Accuracy:", lr_accuracy)
 print("Support Vector Machines Accuracy:", svm_accuracy)
 print("Multilayer Perceptron Accuracy: ", mlp_accuracy)
 
 # Calculate the number of instances incorrectly classified
-print(
-    "\n\t...................NUMBER OF INSTANCES INCORRECTLY CLASSIFIED.....................\n "
-)
+
 lr_incorrect = (lr_predictions != y_test).sum()
 svm_incorrect = (svm_predictions != y_test).sum()
 mlp_incorrect = (mlp_predictions != y_test).sum()
+
+
+print(
+    "\n\t...................NUMBER OF INSTANCES INCORRECTLY CLASSIFIED.....................\n "
+)
+
 
 print(f"Logistic Regression Incorrectly Classified Instances: {lr_incorrect}")
 print(f"Support Vector Machines Incorrectly Classified Instances: {svm_incorrect}")
