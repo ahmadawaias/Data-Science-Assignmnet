@@ -48,6 +48,6 @@ p_out_f1_scores = cross_val_score(
 )
 
 print("Monte Carlo Cross-Validation F1 Scores:", monte_carlo_f1_scores)
-# print("Average F1 Score (Mo   nte Carlo):", np.mean(monte_carlo_f1_scores))
+
 print("Leave P-Out Cross-Validation F1 Scores:", p_out_f1_scores)
-# print("Average F1 Score (Leave P-Out):", np.mean(p_out_f1_scores))
+
